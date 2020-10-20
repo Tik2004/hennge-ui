@@ -1,0 +1,198 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400&display=swap')
+
+*
+  font-family: 'Open Sans', sans-serif
+  outline: none
+
+body
+  background: rgb(248, 247, 247)
+
+.screen
+  border: 1px solid rgba(158, 158, 158, 0.7)
+  border-radius: .3rem
+  max-width: 70%
+  margin: 4rem auto
+  background: white
+  padding: 2rem 4rem
+  box-shadow: 0 0 10px rgb(153, 152, 152)
+
+.calendar
+  display: flex
+
+.calendar-1
+  display: flex
+  border: 2px solid rgb(212, 212, 212)
+  border-right: 0
+  max-width: 18rem
+  height: 2.5rem
+  padding: .4rem 2rem
+  border-radius: .5rem
+  font-size: 1.2rem
+  align-items: center
+  font-weight: 600
+  border-top-right-radius: 0
+  border-bottom-right-radius: 0
+
+.mail-image
+  display: none
+
+.calendar-search
+  display: flex
+  background: rgb(248, 247, 247)
+  border: 2px solid rgb(212, 212, 212)
+  width: 4rem
+  align-items: center
+  justify-content: center
+  border-top-right-radius: .5rem
+  border-bottom-right-radius: .5rem
+
+.calendar-image, .search-image
+  width: 1.7rem
+
+.calendar-image
+  margin-right: 1rem
+
+.mails-count
+  border-bottom: 1px solid rgb(218, 218, 218)
+
+.count
+  font-size: 1.2rem
+  color: rgb(104, 104, 104)
+  font-weight: 800
+
+.all-mails
+  height: 65vh
+  display: flex
+  justify-content: center
+  align-items: center
+
+.logo
+  width: 15vh
+
+.mail-detail-names
+  display: flex
+  justify-content: space-between
+  font-size: 1.1rem
+  font-weight: 900
+  background: rgb(245, 244, 244)
+  padding: 0 2rem
+  color: rgb(153, 152, 152)
+  border-bottom: 1px solid rgb(218, 218, 218)
+
+.mail-info
+  display: flex
+  justify-content: space-between
+  font-size: 1.1rem
+  font-weight: 600
+  padding: 0 2rem
+  border-bottom: 1px solid rgb(218, 218, 218)
+  color: rgb(48, 48, 48)
+  transition-duration: 0.2s
+
+.count-of-getters
+  background: rgb(153, 152, 152)
+  padding: 0 .3rem
+  color: white
+  border-radius: .4rem
+  font-weight: 400
+
+.data
+  color: rgb(49, 48, 48)
+  font-weight: 900
+  text-shadow: 0 0 1px rgb(49, 49, 48)
+  display: flex
+
+.data-image
+  width: .7rem
+  margin-left: 10px
+
+.mail-info:hover
+  color: rgb(36, 124, 255)
+
+.dark-light
+  display: block
+  margin: 0 auto
+  background: rgb(48, 48, 48)
+  color: white
+  width: 12rem
+  height: 2.5rem
+  border: 1px solid rgb(48, 48, 48)
+  font-family: 'Open Sans'
+  font-size: 1rem
+  border-radius: 2rem
+  margin-bottom: 1rem
+  box-shadow: 0 0 12px rgb(70, 70, 70)
+  transition-duration: 0.5s
+
+  &:hover
+    box-shadow: 0 0 12px rgb(70, 70, 70), 0 0 20px rgb(102, 102, 102), 0 0 30px rgb(136, 136, 136), 0 0 40px rgb(184, 182, 182)
+
+.mail-subject
+  font-size: 1.4rem
+  font-weight: 600
+  font-size: 'Open Sans'
+
+  /*position: absolute;
+   *z-index: 1;
+  background: rgb(230, 230, 230)
+  color: rgb(56, 56, 56)
+  padding: 2rem
+  border-radius: 1rem
+  margin-top 1rem
+  /*left: 40%;
+   *bottom: -70%;
+
+.made-by
+  font-size: .2rem
+  text-align: center
+  font-family: 'Open Sans'
+  font-weight: 700
+
+@media only screen and (max-width: 1000px)
+  *
+    padding: -2rem
+    margin: 0
+
+  .calendar-date
+    font-size: .9rem
+
+  body
+    margin: 0
+    padding: 0
+
+  .screen
+    max-width: 100%
+    margin: 2rem 0
+    padding: 1rem
+
+  .mail-detail-names p
+    border-right: 1px solid rgb(141, 141, 141)
+    padding: .5rem
+
+  .from, .to
+    font-size: .9rem
+    padding: 0
+
+  .from
+    grid-area: from
+
+  .to
+    grid-area: to
+
+  .subject
+    grid-area: subject
+    text-overflow: ellipsis
+
+  .data
+    grid-area: data
+
+  .mail-image
+    display: block
+    width: 1rem
+    align-self: center
+
+  .mail-info
+    display: grid
+    grid-template-areas: 'icon from from data' 'icon to to to' 'subject subject subject subject'
+    padding: 1rem 0
+    text-overflow: ellipsis

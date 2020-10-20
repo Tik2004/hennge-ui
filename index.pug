@@ -1,0 +1,40 @@
+doctype html
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport" content="width=device-width, initial-scale=1.0")
+    link(rel="stylesheet" href="style.min.css")
+    script(src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous")
+    script(type="text/javascript" src="script.min.js")
+    title Hello!
+  body
+    .screen
+      .calendar
+        .calendar-1
+          img.calendar-image(src="images/icon_calender.svg")
+          p.calendar-date 2021/1/1-2021/1/1
+        .calendar-search
+          img.search-image(src="images/icon_search.svg")
+      .mails-count
+        p.count Results: 0 Mail(s)
+      .all-mails
+        img.logo(src="images/logo.png")
+    .screen
+      .calendar
+        .calendar-1
+          img.calendar-image(src="images/icon_calender.svg")
+          p.calendar-date 2020/12/1-2021/1/1
+        .calendar-search
+          img.search-image(src="images/icon_search.svg")
+      .mails-count
+        p.count Results: 10 Mail(s)
+      .all-mails-10
+        .mail-detail-names
+          p From
+          p To
+          p Subject
+          p.data
+            | Date 
+            img.data-image(src="images/icon_arrow01.svg")
+    button.dark-light Dark/Light Mode
+    p.made-by brought to html&css by Tigran Arshakyan
